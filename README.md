@@ -2,19 +2,13 @@
 
 A Vanilla JavaScript project built to practice real-time form validation, DOM manipulation, and dynamic UI feedback. This is part of my JavaScript learning portfolio.
 
----
-
 ## 🚀 Live Demo
 
-[View on Netlify](https://email-validations-miller.netlify.app/) ← *(replace with your Netlify URL)*
-
----
+[View on Netlify](https://email-validations-miller.netlify.app/)
 
 ## 📌 About the Project
 
 An email composition form that validates all fields in real time before allowing submission. The form requires a destination email, subject, and message body — with an optional CC field. As the user fills out the form, error messages appear and disappear dynamically, the submit button stays disabled until all fields are valid, and a spinner animation simulates the sending process before showing a success confirmation.
-
----
 
 ## 🧠 Concepts Practiced
 
@@ -46,8 +40,6 @@ An email composition form that validates all fields in real time before allowing
 | Arrow Functions    | Used in event listeners and `setTimeout` callbacks                      |
 | `DOMContentLoaded` | Wraps all logic to ensure the DOM is ready before JS runs               |
 
----
-
 ## 🗂️ Project Structure
 
 ```
@@ -59,8 +51,6 @@ An email composition form that validates all fields in real time before allowing
 │   └── spinner.css   (CSS keyframe spinner animation)
 ```
 
----
-
 ## ⚙️ How It Works
 
 1. **Real-time validation** — every `input` event fires `validacionInputs()`, which checks if the field is empty or (for email fields) matches the regex pattern.
@@ -70,21 +60,15 @@ An email composition form that validates all fields in real time before allowing
 5. **Submit flow** — on submit, the spinner appears for 3 seconds, then hides and a green success alert is shown. That alert auto-removes after another 3 seconds.
 6. **Reset** — both the `email` object and the HTML form are cleared together, keeping data and UI in sync.
 
----
-
 ## 🛠️ Technologies
 
 - HTML5
 - CSS3 + Tailwind CSS (compiled)
 - JavaScript ES6+ (Vanilla — no frameworks or libraries)
 
----
-
 ## 📚 What I Learned
 
 This project introduced me to the idea of keeping a **JavaScript object as the source of truth** for form state, separate from the DOM. Instead of reading input values directly at submit time, the object is updated on every keystroke and validated continuously. This pattern — syncing a data object with the UI in real time — is the same mental model behind frameworks like React and Vue, but built from scratch with pure JavaScript.
-
----
 
 ## 👨‍💻 Author
 
